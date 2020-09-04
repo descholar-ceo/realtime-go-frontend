@@ -23,8 +23,8 @@ class App extends Component{
         return(
             <div className="app">
                 <div className="nav">
-                    <ChannelSection 
-                        channels={this.state.channels}
+                    <ChannelSection
+                        {...this.state}
                         addChannel={this.addChannel.bind(this)}
                         setChannel={this.setChannel.bind(this)}
                     /> 

@@ -12,7 +12,7 @@ class Channel extends Component{
         const active=channel===activeChannel ? 'active' : '';
         return(
                 <li className={active}>
-                    <a href="#" onClick={this.onClick.bind(this)}>
+                    <a onClick={this.onClick.bind(this)}>
                         {channel.name}
                     </a>
                 </li>
