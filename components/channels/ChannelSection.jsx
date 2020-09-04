@@ -7,13 +7,8 @@ class ChannelSection extends Component{
     render(){
         return(
             <div>
-                <ChannelList
-                    channels={this.props.channels}
-                    setChannel={this.props.setChannel}
-                />
-                <ChannelForm
-                    addChannel={this.props.addChannel}
-                />
+                <ChannelList {...this.props} />
+                <ChannelForm {...this.props} />
             </div>
         )
     }
