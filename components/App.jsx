@@ -1,3 +1,4 @@
+import '../app.css';
 import React, {Component} from 'react'
 import ChannelSection from './channels/ChannelSection.jsx';
 

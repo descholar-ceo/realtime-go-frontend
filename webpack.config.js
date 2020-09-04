@@ -38,9 +38,9 @@ module.exports = (env) => ({
         },
       },
       {
-        test: /\.(scss|css)$/,
+        test: /\.(css)$/,
         exclude: /node_modules/,
-        loader: ['style-loader', 'css-loader', 'sass-loader'],
+        loader: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|jpg|svg|gif|jpeg)?$/,
