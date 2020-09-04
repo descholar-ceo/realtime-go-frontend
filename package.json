@@ -5,5 +5,10 @@
   "main": "index.js",
   "repository": "https://github.com/descholar-ceo/realtime-go-frontend",
   "author": "descholar-ceo <emmamugira@gmail.com>",
-  "license": "BSD 3-Clause License"
+  "license": "BSD 3-Clause License",
+  "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
