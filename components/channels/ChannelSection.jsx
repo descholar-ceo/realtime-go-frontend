@@ -10,7 +10,7 @@ class ChannelSection extends Component{
                 <div className="panel-heading">
                     <strong>Channels</strong>
                 </div>
-                <div className="channel-body channels">
+                <div className="panel-body channels">
                     <ChannelList {...this.props} />
                     <ChannelForm {...this.props} />
                 </div>
@@ -22,7 +22,8 @@ class ChannelSection extends Component{
 ChannelSection.propTypes={
     channels:PropTypes.array.isRequired,
     setChannel:PropTypes.func.isRequired,
-    addChannel:PropTypes.func.isRequired
+    addChannel:PropTypes.func.isRequired,
+    activeChannel: PropTypes.object.isRequired
 }
 
 export default ChannelSection;

@@ -8,8 +8,8 @@ class Channel extends Component{
         setChannel(channel);
     }
     render(){
-        const {channel,activeChannel}=this.props
-        const active=channel===activeChannel?'active':''
+        const {channel,activeChannel}=this.props;
+        const active=channel===activeChannel ? 'active' : '';
         return(
                 <li className={active}>
                     <a href="#" onClick={this.onClick.bind(this)}>
