@@ -14,6 +14,10 @@ class App extends Component{
         this.setState({channels});
         //TODO: Send to the server
     }
+    setChannel(activeChannel){
+        this.setState({activeChannel});
+        //TODO: Get channel's messages from the server
+    }
     render(){
         return(
            <ChannelSection 
@@ -24,3 +28,5 @@ class App extends Component{
         )
     }
 }
+
+export default App;
