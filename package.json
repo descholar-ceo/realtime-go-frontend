@@ -5,6 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/descholar-ceo/realtime-go-frontend",
   "author": "descholar-ceo <emmamugira@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --env development --watch --open",
     "build": "webpack -p --env production"

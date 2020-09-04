@@ -11,6 +11,7 @@ class ChannelList extends Component{
                    return(
                        <Channel
                         channel={chan}
+                        key={chan.id}
                         setChannel={this.props.setChannel}
                         />)
                })}
