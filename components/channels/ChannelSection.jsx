@@ -19,3 +19,5 @@ ChannelSection.propTypes={
     setChannel:PropTypes.func.isRequired,
     addChannel:ProTypes.func.isRequired
 }
+
+export default ChannelSection;
