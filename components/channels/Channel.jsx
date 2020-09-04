@@ -10,13 +10,11 @@ class Channel extends Component{
     render(){
         const {channel}=this.props
         return(
-            <ul>
                 <li>
                     <a href="#" onClick={this.onClick.bind(this)}>
                         {channel.name}
                     </a>
                 </li>
-            </ul>
         )
     }
 }
