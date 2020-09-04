@@ -7,7 +7,7 @@
   "author": "descholar-ceo <emmamugira@gmail.com>",
   "license": "BSD 3-Clause",
   "scripts": {
-    "dev":"webpack-dev-server --env development --watch --open"
+    "dev": "webpack-dev-server --env development --watch --open"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -20,6 +20,7 @@
     "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.4.1",
     "mini-css-extract-plugin": "^0.11.0",
+    "react": "^16.13.1",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
