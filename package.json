@@ -5,7 +5,6 @@
   "main": "index.js",
   "repository": "https://github.com/descholar-ceo/realtime-go-frontend",
   "author": "descholar-ceo <emmamugira@gmail.com>",
-  "license": "BSD 3-Clause",
   "scripts": {
     "dev": "webpack-dev-server --env development --watch --open"
   },
