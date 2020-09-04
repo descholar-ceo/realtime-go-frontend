@@ -25,5 +25,4 @@ ChannelList.propTypes={
     setChannel: PropTypes.func.isRequired
 }
 
-
-
+export default ChannelList;
