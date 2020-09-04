@@ -1,0 +1,9 @@
+{
+  "name": "realtime-go-frontend",
+  "version": "1.0.0",
+  "description": "This is a real time chat app in golang",
+  "main": "index.js",
+  "repository": "https://github.com/descholar-ceo/realtime-go-frontend",
+  "author": "descholar-ceo <emmamugira@gmail.com>",
+  "license": "BSD 3-Clause License"
+}
