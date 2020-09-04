@@ -1,12 +1,22 @@
+body{
+  margin: 0;
+  background: rgba(0, 67, 66);
+}
 .app{
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  height: 100vh;
+  height: 86vh;
   font-size: 16px;
+  width: 60vw;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2%;
+  border-radius: 20px;
+  margin: 4% 40% 4% 4%;
 }
 .nav{
-  flex-basis: 20%;
+  flex-basis: 30%;
+  background: rgba(116, 116, 116, 0.6);
 }
 
 .messages-container{
@@ -15,7 +25,7 @@
   height: 100vh;
 }
 .support, .users{
-  height: 50vh;
+  height: 43vh;
   margin-bottom: 0;
 }
 .channels, .users, .messages{
