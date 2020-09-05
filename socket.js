@@ -9,7 +9,11 @@ class Socket {
         ws.onopen = this.open.bind(this);
         ws.onclose = this.close.bind(this);
     }
-    
+
+    on(name,func){
+        
+    }
+
     message(e){
         const event = JSON.parse(e.data);
         if(event.name==='channel add'){
