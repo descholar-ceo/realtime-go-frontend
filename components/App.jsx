@@ -30,6 +30,7 @@ class App extends Component{
     onAddMessage(message){
         let {messages}=this.state;
         messages.push(message);
+        this.setState({messages})
     }
     onAddUser(user){
         let {users}=this.state;
