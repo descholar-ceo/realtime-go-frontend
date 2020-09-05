@@ -26,6 +26,7 @@ body{
   height: 100%;
   padding: 2%;
   background: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
 }
 .support, .users{
   height: 43vh;
