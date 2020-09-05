@@ -45,8 +45,6 @@ class App extends Component{
 
     addChannel(name){
         let {channels}=this.state;
-        // channels.push({id:channels.length,name});
-        // this.setState({channels});
         //TODO: Send to the server
         let msg={
             name:'channel add',
