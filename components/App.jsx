@@ -43,7 +43,8 @@ class App extends Component{
         let {users}=this.state;
         users=users.filter(user=>{
             return user.id!==removeUser.id;
-        })
+        });
+        this.setState({users})
     }
 
     onEditUser(editUser){
