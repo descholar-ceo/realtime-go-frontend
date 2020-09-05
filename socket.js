@@ -14,6 +14,10 @@ class Socket {
         this.eventEmitter.on(name,func)
     }
 
+    off(name,func){
+        this.eventEmitter.removeListener(name,func)
+    }
+
     message(e){
         const event = JSON.parse(e.data);
         if(event.name==='channel add'){
