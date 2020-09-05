@@ -11,11 +11,16 @@ class Socket {
     }
 
     on(name,func){
-        this.eventEmitter.on(name,func)
+        this.eventEmitter.on(name,func);
     }
 
     off(name,func){
-        this.eventEmitter.removeListener(name,func)
+        this.eventEmitter.removeListener(name,func);
+    }
+
+    emit(name,data){
+        const message=JSON.stringify({name,data});
+        this.websocket.send(message);
     }
 
     message(e){
