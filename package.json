@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
+    "fecha": "^4.2.0",
     "react-dom": "^16.13.1"
   }
 }
