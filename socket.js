@@ -5,5 +5,8 @@ class Socket {
         super();
         this.websocket=websocket;
         this.eventEmitter=eventEmitter;
+        ws.onmessage=this.message.bind(this)
+        ws.onopen = this.open.bind(this);
+        ws.onclose = this.close.bind(this);
     }
 }
