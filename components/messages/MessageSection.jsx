@@ -7,7 +7,7 @@ class MessageSection extends Component{
     render(){
         let {activeChannel} = this.props;
         return(
-            <div className="message-container panel panel-default">
+            <div className="messages-container">
                 <div className="panel-heading">
                     <strong>{activeChannel?activeChannel.name:''}</strong>
                 </div>

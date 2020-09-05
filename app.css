@@ -20,9 +20,12 @@ body{
 }
 
 .messages-container{
-  flex-basis: 80%;
+  flex-basis: 70%;
+  width: 100%;
   margin-bottom: 0;
-  height: 100vh;
+  height: 76vh;
+  padding: 2%;
+  background: rgba(255, 255, 255, 0.1);
 }
 .support, .users{
   height: 43vh;
