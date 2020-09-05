@@ -4,21 +4,27 @@ import PropTypes from 'prop-types';
 class MessageForm extends Component{
     onSubmit(e){
         e.preventDefault();
-        const node = this.refs.channel;
-        const channelName=node.value;
-        this.props.addMessage(channelName)
+        const node = this.refs.message;
+        const msg=node.value;
+        this.props.addMessage(msg)
         node.value="";
     }
     render(){
-        return(
-            <form onSubmit={this.onSubmit.bind(this)}>
-                <div className="form-group">
+        let input;
+        if(this.props.activeChannel.id!==undefined){
+            input=(
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="Channel name"
-                        ref="channel"
+                        placeholder="Your message here ..."
+                        ref="message"
                     />
+            )
+        }
+        return(
+            <form onSubmit={this.onSubmit.bind(this)}>
+                <div className="form-group">
+                    {input}
                 </div>
             </form>
         )
