@@ -2,7 +2,7 @@ import '../app.css';
 import React, {Component} from 'react'
 import ChannelSection from './channels/ChannelSection.jsx';
 import UserSection from './users/UserSection.jsx';
-import MessageSection from './messages/MessageSection';
+import MessageSection from './messages/MessageSection.jsx';
 
 class App extends Component{
     constructor(props){
@@ -19,18 +19,19 @@ class App extends Component{
         this.setState({channels});
         //TODO: Send to the server
     }
+
+    setUserName(name){
+        let {users}=this.state;
+        users.push({id:users.length,name});
+        this.setState({users});
+        //TODO: Send to the server
+    }
     addMessage(body){
         let {messages,users}=this.state;
         let createdAt=new Date;
         let author = users.length>0?users[0].name:'annonymous';
         messages.push({id:messages.length,body,createdAt,author});
         this.setState({messages});
-        //TODO: Send to the server
-    }
-    setUserName(name){
-        let {users}=this.state;
-        users.push({id:users.length,name});
-        this.setState({users});
         //TODO: Send to the server
     }
     setChannel(activeChannel){
