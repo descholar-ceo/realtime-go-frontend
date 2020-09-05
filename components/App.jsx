@@ -38,7 +38,9 @@ class App extends Component{
     }
 
     newChannel(channnel){
-        
+        let {channels} = this.state;
+        channels.push(channel);
+        this.setState({channels})
     }
 
     addChannel(name){
