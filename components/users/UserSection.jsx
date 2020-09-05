@@ -21,9 +21,7 @@ class UserSection extends Component{
 
 UserSection.propTypes={
     users:PropTypes.array.isRequired,
-    setUser:PropTypes.func.isRequired,
-    // addChannel:PropTypes.func.isRequired,
-    // activeChannel: PropTypes.object.isRequired
+    setUser:PropTypes.func.isRequired
 }
 
 export default UserSection;

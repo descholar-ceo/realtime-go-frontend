@@ -25,7 +25,7 @@ class UserForm extends Component{
     }
 }
 
-ChannelForm.propTypes={
+UserForm.propTypes={
     setUserName: PropTypes.func.isRequired
 }
 
