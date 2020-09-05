@@ -29,10 +29,19 @@ class App extends Component{
         let {users}=this.state;
         users.push(user);
         this.setState({users});
+        users=users.map(user=>{
+            if(editUser.id===user.id){
+                return editUser;
+            }
+            return user;
+        });
+    }
+
+    onEditUser(editUser){
+        let {users}=this.state;
 
     }
 
-    
     onConnect(){
         this.setState({connected:true});
     }
