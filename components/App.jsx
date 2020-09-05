@@ -10,7 +10,8 @@ class App extends Component{
         this.state={
             channels:[],
             users:[],
-            messages:[]
+            messages:[],
+            activeChannel:{}
         }
     }
     addChannel(name){
