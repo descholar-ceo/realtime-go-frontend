@@ -27,7 +27,7 @@ class App extends Component{
     }
 
     onDisconnect(){
-        
+        this.setState({connected:false})
     }
 
     newChannel(channel){
