@@ -55,7 +55,7 @@ class App extends Component{
               name
             }
         }
-        this.ws.send(msg);
+        this.ws.send(JSON.stringify(msg));
     }
 
     setUserName(name){
