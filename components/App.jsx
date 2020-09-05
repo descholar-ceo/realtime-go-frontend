@@ -24,7 +24,7 @@ class App extends Component{
 
     message(e){
         const event = JSON.parse(e.data)
-        if(event.name==='add channel'){
+        if(event.name==='channel add'){
             this.newChannel(event.data)
         }
     }
