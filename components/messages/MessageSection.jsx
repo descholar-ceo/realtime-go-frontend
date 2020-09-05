@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ChannelForm from "./ChannelForm.jsx";
+import MessageForm from "./MessageForm.jsx";
 import ChannelList from "./ChannelList.jsx";
 import PropTypes from "prop-types";
 
@@ -12,7 +12,7 @@ class MessageSection extends Component{
                 </div>
                 <div className="panel-body channels">
                     <ChannelList {...this.props} />
-                    <ChannelForm {...this.props} />
+                    <MessageForm {...this.props} />
                 </div>
             </div>
         )
