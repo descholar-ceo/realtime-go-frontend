@@ -22,10 +22,19 @@ class App extends Component{
         socket.on('disconnect',this.onDisconnect.bind(this));
         socket.on('channel add', this.onAddChannel.bind(this));
         socket.on('user add', this.onAddUser.bind(this))
+        socket.on('user edit', this.onEditUser.bind(this))
     }
 
+    onAddUser(user){
+        let {users}=this.state;
+        users.push(user);
+        this.setState({users});
+
+    }
+
+    
     onConnect(){
-        this.setState({connected:true})
+        this.setState({connected:true});
     }
 
     onDisconnect(){
