@@ -11,7 +11,7 @@ class Socket {
     }
 
     on(name,func){
-        
+        this.eventEmitter.on(name,func)
     }
 
     message(e){
