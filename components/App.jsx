@@ -23,7 +23,10 @@ class App extends Component{
     }
 
     message(e){
-
+        const event = JSON.parse(e.data)
+        if(event.name==='add channel'){
+            this.newChannel(event.data)
+        }
     }
 
     open(e){
