@@ -20,21 +20,6 @@ class App extends Component{
         
     }
 
-    message(e){
-        const event = JSON.parse(e.data);
-        if(event.name==='channel add'){
-            this.newChannel(event.data);
-        }
-    }
-
-    open(){
-        this.setState({connected:true})
-    }
-
-    close(){
-        this.setState({connected:false})
-    }
-
     newChannel(channel){
         let {channels} = this.state;
         channels.push(channel);
