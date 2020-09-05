@@ -31,7 +31,7 @@ class App extends Component{
     }
 
     close(e){
-
+        this.setState({connected:false})
     }
 
     addChannel(name){
