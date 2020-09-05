@@ -40,14 +40,6 @@ class App extends Component{
     addChannel(name){
         let {channels}=this.state;
         //TODO: Send to the server
-        // let msg={
-        //     name:'channel add',
-        //     data:{
-        //       id:channels.length,
-        //       name
-        //     }
-        // }
-        // this.ws.send(JSON.stringify(msg));
         this.socket.emit('channel add', {name})
     }
 
