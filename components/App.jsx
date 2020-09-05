@@ -18,6 +18,7 @@ class App extends Component{
         let ws = new WebSocket("ws://echo.websocket.org");
         ws.onmessage=this.message.bind(this)
         ws.onopen = this.open.bind(this);
+        ws.onclose = this.close.bind(this);
     }
 
     message(e){
@@ -25,7 +26,7 @@ class App extends Component{
     }
 
     open(e){
-        
+
     }
 
     addChannel(name){
