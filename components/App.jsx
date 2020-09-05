@@ -48,6 +48,14 @@ class App extends Component{
         channels.push({id:channels.length,name});
         this.setState({channels});
         //TODO: Send to the server
+        let msg={
+            name:'channel add',
+            data:{
+              id:channels.length,
+              name
+            }
+        }
+        
     }
 
     setUserName(name){
