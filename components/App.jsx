@@ -17,6 +17,11 @@ class App extends Component{
     componentDidMount(){
         let ws = new WebSocket("ws://echo.websocket.org");
         ws.onmessage=this.message.bind(this)
+        ws.onopen = this.open.bind(this);
+    }
+
+    message(e){
+
     }
 
     addChannel(name){
