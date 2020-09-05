@@ -24,9 +24,16 @@ class Socket {
     }
 
     message(e){
-        const event = JSON.parse(e.data);
-        if(event.name==='channel add'){
-            this.newChannel(event.data);
+        // const event = JSON.parse(e.data);
+        // if(event.name==='channel add'){
+        //     this.newChannel(event.data);
+        // }
+        
+        try{
+            const message=JSON.parse(e.data);
+            this.eventEmitter.emit(message.name,message.data);
+        }catch(err){
+            this.eventEmitter.emit('error',err);
         }
     }
 
