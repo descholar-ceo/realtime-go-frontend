@@ -21,6 +21,10 @@ class App extends Component{
         socket.on('connect',this.onConnect.bind(this));
     }
 
+    onConnect(){
+        this.setState({connected:true})
+    }
+
     newChannel(channel){
         let {channels} = this.state;
         channels.push(channel);
