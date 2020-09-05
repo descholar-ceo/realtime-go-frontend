@@ -29,6 +29,10 @@ class App extends Component{
 
     }
 
+    close(e){
+        
+    }
+
     addChannel(name){
         let {channels}=this.state;
         channels.push({id:channels.length,name});
