@@ -2,6 +2,7 @@ import '../app.css';
 import React, {Component} from 'react'
 import ChannelSection from './channels/ChannelSection.jsx';
 import UserSection from './users/UserSection.jsx';
+import MessageSection from './messages/MessageSection';
 
 class App extends Component{
     constructor(props){
@@ -11,7 +12,7 @@ class App extends Component{
             users:[]
         }
     }
-    addChannel(name){
+    addChannel(body){
         let {channels}=this.state;
         channels.push({id:channels.length,name});
         this.setState({channels});
@@ -41,6 +42,10 @@ class App extends Component{
                     setUserName={this.setUserName.bind(this)}
                     />
                 </div>
+                <MessageSection
+                    {...this.state}
+                    addMessage={this.addMessage.bind(this)}
+                />
             </div>)}}
 
 export default App;
