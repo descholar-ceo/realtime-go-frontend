@@ -35,6 +35,7 @@ class App extends Component{
             }
             return user;
         });
+        this.setState({users})
     }
 
     onEditUser(editUser){
