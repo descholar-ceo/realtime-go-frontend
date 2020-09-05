@@ -23,6 +23,7 @@ class App extends Component{
         socket.on('channel add', this.onAddChannel.bind(this));
         socket.on('user add', this.onAddUser.bind(this))
         socket.on('user edit', this.onEditUser.bind(this))
+        socket.on('user remove', this.onRemoveUser.bind(this))
     }
 
     onAddUser(user){
