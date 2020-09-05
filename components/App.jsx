@@ -27,6 +27,9 @@ class App extends Component{
         socket.on('message add', this.onAddMessage.bind(this))
     }
 
+    onAddMessage(message){
+        let {messages}=this.state;
+    }
     onAddUser(user){
         let {users}=this.state;
         users.push(user);
