@@ -9,7 +9,7 @@ class MessageSection extends Component{
         return(
             <div className="messages-container">
                 <div className="panel-heading">
-                    <strong>{activeChannel?activeChannel.name:''}</strong>
+                    <strong>{activeChannel.name}</strong>
                 </div>
                 <div className="messages">
                     <MessageList {...this.props} />
