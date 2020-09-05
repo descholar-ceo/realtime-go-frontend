@@ -16,7 +16,7 @@ body{
 }
 .nav{
   flex-basis: 30%;
-  background: rgba(116, 116, 116, 0.6);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .messages-container{
@@ -43,9 +43,7 @@ body{
   flex: 1;
   overflow-y: auto;
 }
-.message{
-  /*display: flex;*/
-}
+
 .message > .author{
   flex-basis: 100%;
 }
