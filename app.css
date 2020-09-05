@@ -34,7 +34,7 @@ body{
   justify-content: space-between;
 }
 .channels, .users{
-  height: 88%;
+  height: 70%;
 }
 .messages{
   height: 94%;
