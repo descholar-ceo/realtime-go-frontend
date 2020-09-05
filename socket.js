@@ -47,3 +47,5 @@ class Socket {
         this.eventEmitter.emit('disconnect');
     }
 }
+
+export default Socket;
