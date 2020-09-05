@@ -19,10 +19,15 @@ class App extends Component{
     componentDidMount(){
         let socket = this.socket = new Socket();
         socket.on('connect',this.onConnect.bind(this));
+        socket.on('disconnect',this.onDisconnect.bind(this));
     }
 
     onConnect(){
         this.setState({connected:true})
+    }
+
+    onDisconnect(){
+        
     }
 
     newChannel(channel){
