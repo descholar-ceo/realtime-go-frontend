@@ -14,6 +14,8 @@ class App extends Component{
             activeChannel:{}
         }
     }
+    componentDidMount(){}
+    
     addChannel(name){
         let {channels}=this.state;
         channels.push({id:channels.length,name});
