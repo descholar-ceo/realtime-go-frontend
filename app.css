@@ -1,6 +1,7 @@
 body{
   margin: 0;
   background: rgba(0, 67, 66);
+  overflow: hidden;
 }
 .app{
   display:flex;
