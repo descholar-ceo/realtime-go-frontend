@@ -23,21 +23,21 @@ class App extends Component{
     }
 
     message(e){
-        const event = JSON.parse(e.data)
+        const event = JSON.parse(e.data);
         if(event.name==='channel add'){
-            this.newChannel(event.data)
+            this.newChannel(event.data);
         }
     }
 
-    open(e){
+    open(){
         this.setState({connected:true})
     }
 
-    close(e){
+    close(){
         this.setState({connected:false})
     }
 
-    newChannel(channnel){
+    newChannel(channel){
         let {channels} = this.state;
         channels.push(channel);
         this.setState({channels})
@@ -45,8 +45,8 @@ class App extends Component{
 
     addChannel(name){
         let {channels}=this.state;
-        channels.push({id:channels.length,name});
-        this.setState({channels});
+        // channels.push({id:channels.length,name});
+        // this.setState({channels});
         //TODO: Send to the server
         let msg={
             name:'channel add',
