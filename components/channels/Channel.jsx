@@ -22,7 +22,8 @@ class Channel extends Component{
 
 Channel.propTypes={
     channel: PropTypes.object.isRequired,
-    setChannel: PropTypes.func.isRequired
+    setChannel: PropTypes.func.isRequired,
+    activeChannel: PropTypes.object.isRequired
 }
 
 export default Channel;

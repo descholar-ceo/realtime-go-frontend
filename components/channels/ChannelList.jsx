@@ -12,7 +12,7 @@ class ChannelList extends Component{
                        <Channel
                         channel={chan}
                         key={chan.id}
-                        setChannel={this.props.setChannel}
+                        {...this.props}
                         />)
                })}
            </ul> 
