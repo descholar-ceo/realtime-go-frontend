@@ -13,9 +13,11 @@ class App extends Component{
         }
     }
     addChannel(body){
-        let {channels}=this.state;
-        channels.push({id:channels.length,name});
-        this.setState({channels});
+        let {messages,users}=this.state;
+        let createdAt=new Date;
+        let author = users.length>0?users[0].name:'annonymous';
+        messages.push({id:messages.length,body,createdAt,author});
+        this.setState({messages});
         //TODO: Send to the server
     }
     setUserName(name){
