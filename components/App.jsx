@@ -11,7 +11,8 @@ class App extends Component{
             channels:[],
             users:[],
             messages:[],
-            activeChannel:{}
+            activeChannel:{},
+            connected:false
         }
     }
     componentDidMount(){
@@ -26,11 +27,11 @@ class App extends Component{
     }
 
     open(e){
-
+        this.setState({connected:true})
     }
 
     close(e){
-        
+
     }
 
     addChannel(name){
