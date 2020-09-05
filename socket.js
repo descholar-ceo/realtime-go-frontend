@@ -38,7 +38,8 @@ class Socket {
     }
 
     open(){
-        this.setState({connected:true})
+        // this.setState({connected:true})
+        this.eventEmitter.emit('connect')
     }
 
     close(){
