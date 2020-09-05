@@ -73,10 +73,11 @@ class App extends Component{
     }
 
     setUserName(name){
-        let {users}=this.state;
-        users.push({id:users.length,name});
-        this.setState({users});
+        // let {users}=this.state;
+        // users.push({id:users.length,name});
+        // this.setState({users});
         //TODO: Send to the server
+        this.socket.emit('user edit', {name})
     }
     addMessage(body){
         let {messages,users}=this.state;
