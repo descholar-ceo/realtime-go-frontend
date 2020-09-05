@@ -83,12 +83,16 @@ class App extends Component{
         this.socket.emit('user edit', {name})
     }
     addMessage(body){
-        let {messages,users}=this.state;
-        let createdAt=new Date;
-        let author = users.length>0?users[0].name:'annonymous';
-        messages.push({id:messages.length,body,createdAt,author});
-        this.setState({messages});
+        // let {messages,users}=this.state;
+        // let createdAt=new Date;
+        // let author = users.length>0?users[0].name:'annonymous';
+        // messages.push({id:messages.length,body,createdAt,author});
+        // this.setState({messages});
         //TODO: Send to the server
+        let {activeChannel}=this.state;
+        this.socket.emit('message add',{
+            channelId:activeChannel.id,body
+        });
     }
     setChannel(activeChannel){
         this.setState({activeChannel});
