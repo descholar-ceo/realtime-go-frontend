@@ -17,8 +17,8 @@ class App extends Component{
         }
     }
     componentDidMount(){
-        let ws = this.ws = new WebSocket("ws://echo.websocket.org");
-        
+        let socket = this.socket = new Socket();
+        socket.on('connect',this.onConnect.bind(this));
     }
 
     newChannel(channel){
