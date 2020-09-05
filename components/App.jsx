@@ -24,6 +24,7 @@ class App extends Component{
         socket.on('user add', this.onAddUser.bind(this))
         socket.on('user edit', this.onEditUser.bind(this))
         socket.on('user remove', this.onRemoveUser.bind(this))
+        socket.on('message add', this.onAddMessage.bind(this))
     }
 
     onAddUser(user){
