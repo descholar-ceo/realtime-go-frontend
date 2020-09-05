@@ -29,7 +29,7 @@ body{
   color: rgb(255, 255, 255);
 }
 .support, .users{
-  height: 43vh;
+  height: 50%;
   margin-bottom: 0;
 }
 .channels, .users, .messages{
