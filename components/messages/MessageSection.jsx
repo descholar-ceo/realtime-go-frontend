@@ -5,10 +5,11 @@ import PropTypes from "prop-types";
 
 class MessageSection extends Component{
     render(){
+        let {activeChannel} = this.props;
         return(
-            <div className="support panel panel-primary">
+            <div className="message-container panel panel-default">
                 <div className="panel-heading">
-                    <strong>Channels</strong>
+                    <strong>{activeChannel.name}</strong>
                 </div>
                 <div className="panel-body channels">
                     <MessageList {...this.props} />
@@ -20,9 +21,8 @@ class MessageSection extends Component{
 }
 
 MessageSection.propTypes={
-    channels:PropTypes.array.isRequired,
-    setChannel:PropTypes.func.isRequired,
-    addChannel:PropTypes.func.isRequired,
+    messages:PropTypes.array.isRequired,
+    addMessage:PropTypes.func.isRequired,
     activeChannel: PropTypes.object.isRequired
 }
 
