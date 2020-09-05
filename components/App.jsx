@@ -93,6 +93,7 @@ class App extends Component{
     }
     setChannel(activeChannel){
         this.setState({activeChannel});
+        this.socket.emit('message unsubscribe')
         //TODO: Get channel's messages from the server
     }
     render(){
