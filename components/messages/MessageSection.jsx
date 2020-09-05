@@ -11,7 +11,7 @@ class MessageSection extends Component{
                 <div className="panel-heading">
                     <strong>{activeChannel?activeChannel.name:''}</strong>
                 </div>
-                <div className="panel-body channels">
+                <div className="messages">
                     <MessageList {...this.props} />
                     <MessageForm {...this.props} />
                 </div>
