@@ -21,6 +21,7 @@ class App extends Component{
         socket.on('connect',this.onConnect.bind(this));
         socket.on('disconnect',this.onDisconnect.bind(this));
         socket.on('channel add', this.onAddChannel.bind(this));
+        socket.on('user add', this.onAddUser.bind(this))
     }
 
     onConnect(){
