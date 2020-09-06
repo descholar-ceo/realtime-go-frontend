@@ -4,9 +4,9 @@ class Socket {
     constructor(websocket=new WebSocket(),eventEmitter=new EventEmitter()){
         this.websocket=websocket;
         this.eventEmitter=eventEmitter;
-        ws.onmessage=this.message.bind(this)
-        ws.onopen = this.open.bind(this);
-        ws.onclose = this.close.bind(this);
+        websocket.onmessage=this.message.bind(this)
+        websocket.onopen = this.open.bind(this);
+        websocket.onclose = this.close.bind(this);
     }
 
     on(name,func){
